@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package lumos_msgs;
+
+enum EventType {
+    EVENT_BUTTON_PRESS = 0;
+    EVENT_BUTTON_RELEASE = 1;
+}
+
+message ButtonEvent {
+    int32 button_id = 1;
+    EventType event = 2;
+}
+
